@@ -82,5 +82,5 @@ You can use the `gLiveView` tool to monitor your node. Follow the following step
     ./guild-deploy.sh p
    ```
 
-3. Modify the `/opt/cardano/cnode/env` with the port and socket path of your node.
+3. Modify the `/opt/cardano/cnode/scripts/env` with the port and socket path of your node.
 4. Run `/opt/cardano/cnode/scripts/gLiveView.sh` to start monitoring your node.
