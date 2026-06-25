@@ -60,3 +60,27 @@ journalctl --user -u cardano-node -f   # follow logs
 The script is idempotent: re-run it whenever you move the repository or regenerate keys.
 
 PRs are welcome.
+
+## gLiveView
+
+You can use the `gLiveView` tool to monitor your node. Follow the following steps to set it up:
+
+1. Install `gLiveView`:
+
+   ```bash
+    mkdir "$HOME/tmp";cd "$HOME/tmp"
+    # Install curl
+    # CentOS / RedHat - sudo dnf -y install curl
+    # Ubuntu / Debian - sudo apt -y install curl
+    curl -sS -o guild-deploy.sh https://raw.githubusercontent.com/cardano-community/guild-operators/master/scripts/cnode-helper-scripts/guild-deploy.sh
+    chmod 755 guild-deploy.sh
+   ```
+
+2. Install pre-requisites:
+
+   ```bash
+    ./guild-deploy.sh p
+   ```
+
+3. Modify the `/opt/cardano/cnode/env` with the port and socket path of your node.
+4. Run `/opt/cardano/cnode/scripts/gLiveView.sh` to start monitoring your node.
