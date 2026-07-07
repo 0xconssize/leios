@@ -3,7 +3,9 @@
 # Capture your pool id (from the cold key) and stake address
 POOL_ID=$(cardano-cli dijkstra stake-pool id --cold-verification-key-file leios/keys/cold.vkey --output-format hex)
 STAKE_ADDR=$(cardano-cli dijkstra stake-address build --stake-verification-key-file leios/keys/stake.vkey)
+POOL_BECH32=$(cardano-cli dijkstra stake-pool id --output-bech32 --cold-verification-key-file leios/keys/cold.vkey)
 echo "pool id: $POOL_ID"
+echo "pool bech32: $POOL_BECH32"
 echo "stake address: $STAKE_ADDR"
 
 # Is the pool registered on-chain?
