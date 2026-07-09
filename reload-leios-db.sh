@@ -22,6 +22,6 @@ wget https://$RELAY_FQDN/leios.full.tar.zst.sha256
 sha256sum -c leios.full.tar.zst.sha256
 tar -xf leios.full.tar.zst -C tmp-testnet
 
-mv tmp-testnet/db-leios tmp-testnet/db
+# mv tmp-testnet/db-leios tmp-testnet/db
 
 systemctl --user start cardano-node
