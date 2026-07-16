@@ -39,6 +39,7 @@ Run them in order. Each script corresponds to a step in the official guide.
 | `03-generate-node-operational-keys.sh` | Step 3 — Generate cold, KES, and VRF keys                |
 | `04-issue-operational-certificate.sh`  | Step 4 — Issue the operational certificate               |
 | `05-register-certificates.sh`          | Step 5 — Register stake address and pool on-chain        |
+| `05-update-pool-registration.sh`      | Update pool parameters without registering the stake address again |
 | `06-delegate-funds.sh`                 | Step 6 — Delegate your stake to your pool                |
 | `07-verify-delegation.sh`              | Step 7 — Verify pool registration and delegation         |
 | `08-run-node.sh`                       | Step 8 — Run the node as a block producer (foreground)   |
