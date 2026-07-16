@@ -81,6 +81,7 @@ cardano-cli dijkstra transaction build-raw \
 cardano-cli dijkstra transaction sign \
   --tx-body-file leios/keys/pool-reg-update-tx.raw \
   --signing-key-file leios/keys/payment.skey \
+  --signing-key-file leios/keys/stake.skey \
   --signing-key-file leios/keys/cold.skey \
   --out-file leios/keys/pool-reg-update-tx.signed
 
